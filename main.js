@@ -38,6 +38,7 @@ function getProfile(event) {
   xhr.open("GET", "https://api.github.com/users/" + username, true);
   xhr.send();
 }
+
 document
   .getElementById("userForm")
   .addEventListener("submit", getProfile, false);
